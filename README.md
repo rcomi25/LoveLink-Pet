@@ -61,7 +61,7 @@ sudo apt upgrade -y
 3. Install Mosquitto MQTT Broker <br>
 ```Bash
 sudo apt install -y mosquitto mosquitto-clients
-```sudo systemctl enable mosquitto
+sudo systemctl enable mosquitto
 ```
 5. Create MQTT User <br>
 ```Bash
