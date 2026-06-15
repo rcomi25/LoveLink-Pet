@@ -142,7 +142,7 @@ Files are available in: <br>
 - USB Mode -> Hardware CDC and JTAG
 - Upload Mode -> UART0/Hardware CDC
 - Upload Speed -> 921600
-3. Install all those libraries:
+3. Install the following libraries:
 - LVGL 8.3.11
 - Arduino_GFX_Library
 - TinyGSM
