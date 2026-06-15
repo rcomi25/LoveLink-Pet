@@ -72,7 +72,7 @@ Enter your MQTT password when asked <br> <br>
 ```Bash
 sudo nano /etc/mosquitto/mosquitto.conf
 ```
-PASTE PI_1 and save it <br>
+Paste *PI_1* and save it <br>
 ```Bash
 sudo systemctl restart mosquitto
 sudo systemctl status mosquitto --no-pager
@@ -85,7 +85,7 @@ sudo apt install -y python3-paho-mqtt
 ```Bash
 nano /home/pi/mqtt_history_bridge.py
 ```
-PASTE PI_2, change username, password and save it <br> <br>
+Paste *PI_2*, change username, password and save it <br> <br>
 12. Set the permissions <br>
 ```Bash
 sudo chown pi:pi /home/pi/mqtt_history_bridge.py
@@ -95,7 +95,7 @@ chmod +x /home/pi/mqtt_history_bridge.py
 ```Bash
 sudo nano /etc/systemd/system/mqtt-history-bridge.service
 ```
-PASTE PI_3  and save it <br> <br>
+Paste *PI_3*  and save it <br> <br>
 15. Enable and start <br>
 ```Bash
 sudo systemctl daemon-reload
