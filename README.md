@@ -114,12 +114,12 @@ Button Connections: <br>
 - SELECT	17
 
 Display ST7789: <br>
-SCL 12 <br>
-SDA 11 <br>
-CS   10 <br>
-DC   13 <br>
-RES  14 <br>
-BLK   21 <br>
+- SCL 12
+- SDA 11
+- CS   10
+- DC   13
+- RES  14
+- BLK   21
 
 # 3D Printed Enclosure
 Files are available in: <br>
