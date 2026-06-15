@@ -54,33 +54,33 @@ Prerequisites
 This guide assumes Raspberry Pi OS Lite is already installed!
 
 1. Update the system <br>
-sudo apt update <br>
-sudo apt upgrade -y <br>
+```sudo apt update``` <br>
+```sudo apt upgrade -y```<br>
 2. Install Mosquitto MQTT Broker <br>
-sudo apt install -y mosquitto mosquitto-clients <br>
-sudo systemctl enable mosquitto <br>
+```sudo apt install -y mosquitto mosquitto-clients``` <br>
+```sudo systemctl enable mosquitto``` <br>
 3. Create MQTT User <br>
-sudo mosquitto_passwd -c /etc/mosquitto/passwd *USERNAME* --> *Enter your MQTT password when asked* <br>
+```sudo mosquitto_passwd -c /etc/mosquitto/passwd *USERNAME*``` --> *Enter your MQTT password when asked* <br>
 4. Configure Mosquitto <br>
-sudo nano /etc/mosquitto/mosquitto.conf <br>
+```sudo nano /etc/mosquitto/mosquitto.conf``` <br>
 *PASTE PI_1 and save it* <br>
-sudo systemctl restart mosquitto <br>
-sudo systemctl status mosquitto --no-pager <br>
+```sudo systemctl restart mosquitto``` <br>
+```sudo systemctl status mosquitto``` --no-pager <br>
 5. Install Python MQTT Library <br>
-sudo apt install -y python3-paho-mqtt <br>
+```sudo apt install -y python3-paho-mqtt``` <br>
 6. Create the script <br>
-nano /home/pi/mqtt_history_bridge.py <br>
+```nano /home/pi/mqtt_history_bridge.py``` <br>
 *PASTE PI_2, change username and password and save it* <br>
 7. Set the permissions <br>
-sudo chown pi:pi /home/pi/mqtt_history_bridge.py <br>
-chmod +x /home/pi/mqtt_history_bridge.py <br>
+```sudo chown pi:pi /home/pi/mqtt_history_bridge.py``` <br>
+```chmod +x /home/pi/mqtt_history_bridge.py``` <br>
 8. Create a systemd Service <br>
-sudo nano /etc/systemd/system/mqtt-history-bridge.service <br>
+```sudo nano /etc/systemd/system/mqtt-history-bridge.service``` <br>
 *PASTE PI_3  and save it* <br>
 9. Enable and start <br>
-sudo systemctl daemon-reload <br>
-sudo systemctl enable mqtt-history-bridge <br>
-sudo systemctl start mqtt-history-bridge <br>
+```sudo systemctl daemon-reload``` <br>
+```sudo systemctl enable mqtt-history-bridge``` <br>
+```sudo systemctl start mqtt-history-bridge``` <br>
 
 # Hardware wiring
 Single-cell LiPo battery connected directly to the LilyGO board.
